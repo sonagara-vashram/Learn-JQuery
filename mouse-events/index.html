@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        #box {
+            background-color: rgb(255, 235, 216);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        JQuery Mouse Events :
+    </h1>
+    <div id="box" class="test">
+        <h1>
+            Hello World
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel culpa, quidem enim consequatur minima?</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            //click event
+            $('#box').click(function () {
+                $('#box').css('background-color', 'rgb(255, 245, 26)');
+            });
+            //double click event
+            $('#box').dblclick(function () {
+                $('#box').css('background-color', 'rgb(255, 26, 26)');
+            });
+            //mouse enter event
+            // $('#box').mouseenter(function () {
+            //     $('#box').css('background-color', 'rgb(26, 255, 26)');
+            // });
+            //mouse leave event
+            // $('#box').mouseleave(function () {
+            //     $('#box').css('background-color', 'rgb(255, 235, 216)');
+            // });
+            //mouse over event
+            // $('#box').mouseover(function () {
+            //     $('#box').css('background-color', 'rgb(26, 255, 255)');
+            // });
+            //mouse out event
+            // $('#box').mouseout(function () {
+            //     $('#box').css('background-color', 'rgb(255, 235, 216)');
+            // });
+            //hover event
+            // $('#box').hover(function () {
+            //     $('#box').css('background-color', 'rgb(26, 255, 255)');
+            // }, function () {
+            //     $('#box').css('background-color', 'rgb(255, 235, 216)');
+            // });
+            // context menu event
+            // $('#box').contextmenu(function () {
+            //     $('#box').css('background-color', 'rgb(26, 255, 255)');
+            // });
+        });
+    </script>
+</body>
+
+</html>
